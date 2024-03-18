@@ -31,7 +31,7 @@ const Navbar = () => {
 
     return (
         <nav className={`navbar ${isSticky ? 'sticky' : ''}`}>
-            <a href="/" className="nav-logo">SchoolName</a>
+            <a href="/" className="nav-logo">GNV International</a>
             <div className="hamburger" onClick={toggleMobileMenu}>
                 <i className="fas fa-bars"></i> {/* Using Font Awesome icon */}
             </div>
