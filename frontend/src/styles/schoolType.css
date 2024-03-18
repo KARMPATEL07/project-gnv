@@ -1,0 +1,55 @@
+/* Card.css */
+.card {
+  width: 300px; /* Adjust width as needed */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 16px;
+}
+
+.card:hover{
+   transform: scale(1.2);
+   background-color: #9ab4ba;
+   transition: 0.5s ease-in-out;
+}
+
+.card-image {
+  width: 100%;
+  height: 200px; /* Adjust height as needed */
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 16px;
+}
+
+.card-title {
+  margin: 0 0 10px 0;
+  font-size: 1.2em;
+}
+
+.card-bullets {
+  list-style: inside;
+  padding: 0;
+  margin: 0 0 16px 0;
+}
+
+.card-bullets li {
+  text-align: left;
+  margin: 5px 0;
+}
+
+.card-button {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #007bff; /* Adjust the button color as needed */
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.card-button:hover {
+  background-color: #0056b3; /* Darker shade for hover effect */
+}

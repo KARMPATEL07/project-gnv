@@ -1,0 +1,35 @@
+.h1{
+
+}
+.gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; Ensure the gallery takes the full height of the viewport */
+  overflow: hidden; /* Hide overflow to prevent horizontal scrolling */
+}
+
+.gallery img {
+  max-width: 300px; /* Ensure images don't exceed container width */
+  max-height: auto; /* Ensure images don't exceed container height */
+  transition: transform 1s ease; /* Add a smooth transition for the transform property */
+}
+
+.gallery img.active {
+  transform: scale(1.2); /* Increase the size of the active image */
+}
+
+@media only screen and (max-width: 768px) {
+  .gallery {
+    overflow-x: scroll; /* Enable horizontal scrolling on smaller screens */
+    flex-wrap: nowrap; /* Ensure images are in a single row */
+    justify-content: flex-start; /* Align images to the start of the container */
+  }
+
+  .gallery img {
+    max-width: 100%; /* Ensure images don't exceed container width */
+    max-height: 100%; /* Ensure images don't exceed container height */
+    flex: 0 0 auto; /* Prevent images from shrinking on smaller screens */
+    margin-right: 10px; /* Add some space between images */
+  }
+}

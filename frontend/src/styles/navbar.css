@@ -1,0 +1,128 @@
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  position: relative;
+  height: 50px;
+  padding: 10px 20px;
+  transition: background-color 2s ease, box-shadow 0.3s ease, top 5s ease;
+  font-family: "Atma", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.nav-logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-menu {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-item {
+  margin-left: 20px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s;
+  margin: 10px;
+}
+
+.nav-link:hover {
+  color: #ddd;
+}
+
+/* Navbar.css */
+
+
+.sticky {
+  position: fixed;
+
+  top: 1;
+  width: 96.3%;
+  background-color: rgb(32, 82, 126); /* or any color you prefer */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: adds a shadow for better visibility */
+  z-index: 1000; /* Ensure the navbar is above other content */
+  transition: background-color 2s ease, box-shadow 0.3s ease, top 10s ease width 10s ease;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  z-index: 2000; /* Ensure the hamburger is above other content */
+}
+
+.hamburger i {
+  color: #fff; /* Adjust color to match your design */
+  font-size: 28px; /* Icon size */
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-menu.mobile-menu {
+  display: none;
+  position: fixed;
+  background-color: #333; /* Background color for the mobile menu */
+  width: 95.9%;
+  height: 50vh;
+  top: 0;
+  left: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1500; /* Ensure menu is below the hamburger icon but above other content */
+  padding-top: 60px; /* Adjust if your navbar height is different */
+  box-sizing: border-box;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.nav-item {
+  margin: 15px 0; /* Space between menu items */
+}
+
+.nav-link {
+  color: #fff; /* Text color for menu items */
+  font-size: 1.5em; /* Larger text for easier clicking on touch devices */
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #ddd; /* Highlight color on hover/focus */
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .sticky{
+    width: 85.67%;
+}
+
+  .nav-menu {
+    display: none;
+    width: 100%;
+  }
+
+  .nav-menu.mobile-menu {
+    display: flex;
+  }
+}

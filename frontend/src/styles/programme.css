@@ -1,0 +1,13 @@
+.cardss{
+    display: flex;
+}
+
+/* .cardss:hover{
+    transform: scale(1.5x);
+    background-color: #9ab4ba;
+} */
+@media (max-width: 768px) {
+    .cardss{
+    display: block;
+}
+}
