@@ -3,7 +3,8 @@
   padding: 20px;
   text-align: center;
   background-color: #f5f5f5;
-  font-family: "Atma", system-ui;
+  /* font-family: "Atma", system-ui; */
+  font-family:'poppins' ;
   font-weight: 400;
   font-style: normal;
 }

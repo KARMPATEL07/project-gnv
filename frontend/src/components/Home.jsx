@@ -3,6 +3,7 @@ import Offering from "./cards/Offering"
 import Hero from "./Hero"
 import Contact from "./Contact"
 import Gallery from "./Gallery"
+import Vision from "./Vision"
 
 import "../styles/home.css"
 import Pillars from "./Pillars"
@@ -21,7 +22,8 @@ const Home = () => {
                 <Programme />
                 <Offering />
                 <Gallery />
-                <Pillars/>
+                <Pillars />
+                <Vision />
             </div>
             <Contact />
 
