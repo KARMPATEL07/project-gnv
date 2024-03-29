@@ -172,3 +172,34 @@
         display: block;
     }
 }
+
+@media screen and (max-width: 768px) {
+
+    .parallax {
+            background-image: url("https://i.pinimg.com/736x/e4/8b/1c/e48b1c20a3d4941697d4eabeffdb1a83.jpg");
+            /* Same image as background */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100%;
+            /* Adjust as needed */
+            width: 100%;
+            transition: ease 0.5s;
+            /* Adjust as needed */
+        }
+
+    .info-card-icon-mis {
+        top: 5000px;
+        left: 40%;
+    }
+
+    .info-card-icon-vis {
+        top: 6210px;
+        left: 40%;
+    }
+
+    .about-text-content {
+        margin-bottom: 40px;
+    }
+}
