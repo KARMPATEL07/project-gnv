@@ -1,0 +1,70 @@
+.person-container {
+    position: relative;
+    text-align: center;
+    border-color: black;
+    background-color: aqua;
+    max-width: 100%;
+    padding: 20px;
+    border-radius: 10%;
+}
+
+.oval-animation1 {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 205px;
+    height: 220px;
+    background-color: rgba(255, 0, 0, 0.3);
+    border-radius: 100% / 100%;
+    animation: bounce 1s ease-in-out infinite alternate, rotate 4s linear infinite;
+}
+
+.oval-animation2 {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 205px;
+    height: 220px;
+    background-color: rgba(255, 189, 8, 0.63);
+    border-radius: 100% / 100%;
+    animation: bounce 2s ease-in-out infinite alternate, rotate 3s linear infinite;
+}
+
+.person-image {
+    position: relative;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    z-index: 1;
+}
+
+
+.p-name {
+    /* max-width: 500px; */
+    background-color: rgb(173, 139, 94);
+    border-radius: 20%;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translate(-50%, -50%) translateY(-10px);
+    }
+
+    50% {
+        transform: translate(-50%, -50%) translateY(10px);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}

@@ -1,0 +1,117 @@
+/* .pillars-container{
+    display: flex;
+    justify-content: space-between;
+} */
+
+.pillars-container {
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #f0f0f0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.pillars-title {
+    font-size:50px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.moving-element img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+    animation: runAnimation 0.5s steps(1) infinite alternate;
+}
+
+@keyframes runAnimation {
+    0% {
+        content: url("https: //png.pngtree.com/png-clipart/20201020/ourmid/pngtree-running-clipart-bunny-png-image_2371146.jpg");
+        /* Show the first rabbit image */
+    }
+
+    100% {
+        content: url("https: //img.freepik.com/premium-psd/rabbit-running-isolated-transparent-background_879541-1728.jpg");
+        /* Show the second rabbit image */
+    }
+}
+
+.pillars-subtitle {
+    font-size:15px;
+    /* margin-bottom: 20px; */
+    text-align: center;
+}
+
+.pillars-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+
+}
+
+
+
+ .moving-element {
+     position: absolute;
+     background-color: red;
+     animation: moveAround 10s linear infinite;
+ }
+
+
+@keyframes moveAround {
+    0% {
+        top: 0;
+        left: 0;
+        width: 200px;
+        height: 20px;
+        background-color: red;
+    }
+
+    25% {
+        top: 0;
+        left: calc(100% - 20px);
+        animation-timing-function: ease-in;
+        width: 200px;
+        height: 20px;
+        background-color: blue;
+    }
+
+    50% {
+        top: calc(100% - 20px);
+        left: calc(100% - 20px);
+        animation-timing-function: linear;
+        width: 20px;
+        height: 200px;
+        background-color: green;
+    }
+
+    75% {
+        top: calc(100% - 20px);
+        left: 0;
+        animation-timing-function: ease-out;
+        width: 200px;
+        height: 20px;
+        background-color: yellow;
+    }
+
+    100% {
+        top: 0;
+        left: 0;
+        animation-timing-function: linear;
+        width: 200px;
+        height: 20px;
+        background-color: red;
+    }
+}
+
+@media (max-width: 768px) {
+    .pillars-content {
+            display: block;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+    
+        }
+}

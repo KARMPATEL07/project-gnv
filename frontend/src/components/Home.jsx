@@ -5,6 +5,7 @@ import Contact from "./Contact"
 import Gallery from "./Gallery"
 
 import "../styles/home.css"
+import Pillars from "./Pillars"
 
 
 
@@ -17,22 +18,10 @@ const Home = () => {
             <h1>Welcome to GNV International!</h1>
             <p>Empowering students to create a brighter future.</p>
             <div className="home-content">
-
                 <Programme />
                 <Offering />
                 <Gallery />
-                <section className="home-section">
-                    <h2>Our Mission</h2>
-                    <p>To provide high-quality education that fosters student success.</p>
-                </section>
-                <section className="home-section">
-                    <h2>News and Events</h2>
-                    <p>Check out our latest events and news!</p>
-                </section>
-                <section className="home-section">
-                    <h2>Contact Us</h2>
-                    <p>Have questions? Reach out to our support team.</p>
-                </section>
+                <Pillars/>
             </div>
             <Contact />
 
