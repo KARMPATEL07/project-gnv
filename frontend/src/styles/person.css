@@ -34,7 +34,7 @@
 
 .person-image {
     position: relative;
-    border-radius: 50%;
+    border-radius: 500px;
     width: 200px;
     height: 200px;
     z-index: 1;
@@ -44,7 +44,7 @@
 .p-name {
     /* max-width: 500px; */
     background-color: rgb(173, 139, 94);
-    border-radius: 20%;
+    border-radius: 200px;
 }
 
 @keyframes bounce {

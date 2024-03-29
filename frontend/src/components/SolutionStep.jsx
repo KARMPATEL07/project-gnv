@@ -13,7 +13,7 @@ function SolutionStep({ title, description }) {
                             icon={faCircleChevronDown}
                         />{" "}
                     </div>
-                    <div>{title}</div>
+                    <div className="text-title">{title}</div>
                 </div>
             </p>
             <div

@@ -54,11 +54,13 @@ function About() {
                     <SolutionStep
                         title="Integrating a Holistic Approach to Education"
                         description="To integrate Holistic approach of education by incorporating five layers of development which includes 
+                    <span style=background-color:yellow>
                     <b><span style=color:red> Annamaya Kosha (physical layer)</span>, 
-                    <span style=color:orange>Pranamaya Kosha (life force energy layer)</span> ,
+                    <span style=color:#FF3EA5>Pranamaya Kosha (life force energy layer)</span> ,
                     <span style=color:purple> Manomaya Kosha (mind layer)</span> , 
                     <span style=color:blue>Vijnamaya Kosha (intellectual layer) </span> and 
                     <span style=color:green>Anandamaya Kosha (inner self)</span> .
+                    </span>
                     </b> Each layer exhibits certain distinct characteristics which will help the child to develop for their bright future."
                     />
 

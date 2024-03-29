@@ -76,7 +76,7 @@
 
 .about-title {
     /* font-family: 'Poppins', sans-serif; */
-    font-size: 40px;
+    font-size: 35px;
     font-weight: bold;
     text-align: center;
 }
@@ -127,12 +127,17 @@
     letter-spacing: .7px;
 }
 
+.text-title {
+    font-size: 18px;
+}
+
 .about-text-description {
     margin: 8px 24px;
     color: #4d4b4b;
     /* font-family: 'Rubik', sans-serif; */
     letter-spacing: .7px;
     line-height: 1.6rem;
+    font-size: 15px;
 }
 
 .fa-icon {
@@ -158,5 +163,12 @@
 
     .about-text-content {
         width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .about-section {
+        display: block;
     }
 }
