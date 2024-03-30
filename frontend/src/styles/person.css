@@ -2,10 +2,22 @@
     position: relative;
     text-align: center;
     border-color: black;
-    background-color: aqua;
+    background-color: rgb(252, 252, 252);
     max-width: 100%;
-    padding: 20px;
+    padding: 25px;
     border-radius: 10%;
+    box-shadow: 10px;
+    transition: 1s ease;
+    margin-bottom: 35px;
+}
+
+.person-container:hover {
+    background-color: #FDFFDC;
+
+    .person-image {
+        transform: scale(1.15);
+        transition: 1s ease-in-out;
+    }
 }
 
 .oval-animation1 {
@@ -34,16 +46,19 @@
 
 .person-image {
     position: relative;
-    border-radius: 500px;
+    border-radius: 100px;
     width: 200px;
     height: 200px;
     z-index: 1;
+    object-fit: cover;
 }
+
+
 
 
 .p-name {
     /* max-width: 500px; */
-    background-color: rgb(173, 139, 94);
+    background-color: rgb(141, 123, 100);
     border-radius: 200px;
 }
 
@@ -67,4 +82,101 @@
     100% {
         transform: translate(-50%, -50%) rotate(360deg);
     }
+}
+
+
+.profile-card {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.profile-card:hover {
+    transform: translateY(-10px);
+}
+
+.profile-img {
+    height: 60%;
+    overflow: hidden;
+}
+
+.profile-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-details {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.profile-details h2,
+.profile-details p {
+    margin: 0;
+    color: #ffffff;
+}
+
+.profile-details p {
+    /* margin-top: 5px; */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(154, 115, 15, 0.3) 0%, rgba(229, 230, 215, 0.8) 100%);
+    pointer-events: none;
+}
+
+@keyframes ringAnimation {
+    0% {
+        transform: scale(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+.profile-ring {
+    position: absolute;
+    border: 2px solid rgba(144, 138, 72, 0.5);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    top: 50px;
+    left: 100px;
+    opacity: 0;
+    animation: ringAnimation 1.5s linear infinite;
+
+    pointer-events: none;
+}
+
+.profile-card:hover .profile-ring {
+    opacity: 1;
+
+}
+
+@media (max-width: 768px) {
+    .profile-card {
+        margin-bottom: 30px;
+    }
+        .profile-details{
+            bottom: 35px;
+        }
 }

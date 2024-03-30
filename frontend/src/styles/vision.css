@@ -31,7 +31,7 @@
 
 .about-section {
     margin-top: 20px;
-    padding: 32px;
+    padding: 42px;
     display: flex;
     align-items: stretch;
     justify-content: center;
@@ -154,6 +154,7 @@
 @media screen and (max-width: 1000px) {
     .about-section {
         display: block;
+        padding: 32px;
     }
 
     .about-image-content {
