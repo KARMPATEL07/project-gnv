@@ -1,7 +1,9 @@
 .info-card-icon-mis {
     position: absolute;
-    top: 2775px;
-    left: 23%;
+    /* top: 2775px; */
+    /* left: 23%; */
+    top: -42px;
+    left: 43%;
     padding: 10px;
     background-color: rgb(235,
             245,
@@ -11,8 +13,10 @@
 
 .info-card-icon-vis {
     position: absolute;
-    top: 2775px;
-    right: 23%;
+    /* top: 2775px; */
+    /* right: 23%; */
+    top: -42px;
+    right: 43%;
     padding: 10px;
     background-color: rgb(235,
             245,
@@ -64,6 +68,7 @@
 
 /* Text */
 .about-text-content {
+    position: relative;
     padding: 20px;
     width: 50%;
     text-align: left;
@@ -176,27 +181,26 @@
 @media screen and (max-width: 768px) {
 
     .parallax {
-            background-image: url("https://i.pinimg.com/736x/e4/8b/1c/e48b1c20a3d4941697d4eabeffdb1a83.jpg");
-            /* Same image as background */
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            height: 100%;
-            /* Adjust as needed */
-            width: 100%;
-            transition: ease 0.5s;
-            /* Adjust as needed */
-        }
+        background-image: url("https://i.pinimg.com/736x/e4/8b/1c/e48b1c20a3d4941697d4eabeffdb1a83.jpg");
+        /* Same image as background */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+        /* Adjust as needed */
+        width: 100%;
+        transition: ease 0.5s;
+        /* Adjust as needed */
+    }
 
     .info-card-icon-mis {
-        top: 5000px;
-        left: 40%;
+        left:30%;
     }
 
     .info-card-icon-vis {
-        top: 6210px;
-        left: 40%;
+
+        left: 30%;
     }
 
     .about-text-content {
