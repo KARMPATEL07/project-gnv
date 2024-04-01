@@ -4,6 +4,7 @@ import Hero from "./Hero"
 import Contact from "./Contact"
 import Gallery from "./Gallery"
 import Vision from "./Vision"
+import Framework from "./Framework"
 
 import "../styles/home.css"
 import Pillars from "./Pillars"
@@ -24,6 +25,7 @@ const Home = () => {
                 <Gallery />
                 <Pillars />
                 <Vision />
+                <Framework/>
             </div>
             <Contact />
 

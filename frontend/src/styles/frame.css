@@ -1,0 +1,139 @@
+.parallax-frame {
+    background-image: url("https://img.freepik.com/free-photo/education-day-arrangement-table-with-copy-space_23-2148721266.jpg");
+    /* Same image as background */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    /* Adjust as needed */
+    width: 100%;
+    /* Adjust as needed */
+}
+
+.frame-cards {
+    display: flex;
+}
+
+.educational-framework {
+    padding-top: 20px;
+}
+
+.frame-title {
+    font-size: 20px;
+    margin-bottom: 50px;
+    text-align: center;
+    color: #ffffff;
+
+    background-color: rgba(255, 242, 241, 0.6);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        margin: 20px;
+        overflow: hidden;
+        transition: transform 0.2s;
+        animation: slideUp 0.5s ease-in-out;
+}
+
+.frame-subtitle {
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+
+    background-color: rgba(255, 242, 241, 0.6);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        margin: 20px;
+        overflow: hidden;
+        transition: transform 0.2s;
+        animation: slideUp 0.5s ease-in-out;
+}
+
+.layer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    /* Ensures the footer aligns to the bottom */
+}
+
+.layer-footer {
+    height: 100%;
+    background: url('path/to/decorative-image.png') repeat-x bottom;
+    border-top: 1px solid #ccc;
+}
+
+.activities-list {
+    flex: 1;
+    /* Allows the activity list to expand and fill available space */
+}
+
+.layer {
+    background-color: rgba(255, 242, 241, 0.6);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 20px;
+    overflow: hidden;
+    transition: transform 0.2s;
+    animation: slideUp 0.5s ease-in-out;
+}
+
+.layer:hover {
+    transform: translateY(-10px);
+    background-color: rgba(255, 242, 241,0.7);
+}
+
+.layer-en-title {
+    color: #555;
+    text-align: center;
+    font-style: italic;
+    margin-top: -10px;
+    /* Adjust as necessary */
+}
+
+/* Rest of the CSS remains unchanged */
+
+.layer-title {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 20px;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.activities-list {
+    padding: 20px;
+    list-style-type: none;
+}
+
+.activity {
+    background-color: #f1f1f1;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.activity:hover {
+    background-color: #ddd;
+}
+
+/* Animation to slide the card up */
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .parallax-frame{
+    justify-content: space-between;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+}
