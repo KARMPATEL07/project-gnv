@@ -65,7 +65,7 @@ function EducationalFramework() {
         dots: true,
         infinite: true,
         speed: 500,
-        slidesToShow: 3,
+        slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000,
@@ -73,7 +73,7 @@ function EducationalFramework() {
             {
                 breakpoint: 768,
                 settings: {
-                    slidesToShow: 2,
+                    slidesToShow: 1,
                     slidesToScroll: 1,
                 },
             },
@@ -89,23 +89,47 @@ function EducationalFramework() {
 
     return (
         <div className="parallax-frame">
-        <div className="educational-framework">
-            <div className="heading">
-                <div className="frame-title">
-                    <h1>Educational Framework</h1>
+            <div className="educational-framework">
+                <div className="heading">
+                    <div className="frame-title">
+                        <h1>Educational Framework</h1>
+                    </div>
+                    <div className="frame-subtitle">
+                        <p>GNV INTERNATIONAL follows FIVE-FOLD DEVELOPMENT APPROACH in the educational framework. It includes five layers of development of a child in their early age. These five layers are :
+                        </p>
+                    </div>
                 </div>
-                <div className="frame-subtitle">
-                    <p>GNV INTERNATIONAL follows FIVE-FOLD DEVELOPMENT APPROACH in the educational framework. It includes five layers of development of a child in their early age. These five layers are :
-                    </p>
-                </div>
-            </div>
-            <div className="frame-cards">
+                {/* <div className="frame-cards">
                 {isMobile() ? <Slider />: null}
             {layers.map(layer => (
                 <FrameworkLayer key={layer.id} title={layer.title} enTitle={layer.enTitle} activities={layer.activities} />
             ))}
+            </div> */}
+                <div className="mobileView">
+                <Slider {...settings}>
+                    
+                    {layers.map(layer => (
+                        <FrameworkLayer key={layer.id} title={layer.title} enTitle={layer.enTitle} activities={layer.activities} />
+                    ))}
+                 
+                </Slider>
+                </div>
+                
+
+                <div className="frame-cards">
+                    {isMobile() ?
+                        <Slider {...settings}>
+                            {layers.map(layer => (
+                                <FrameworkLayer key={layer.id} title={layer.title} enTitle={layer.enTitle} activities={layer.activities} />
+                            ))}
+                        </Slider>
+                        :
+                        layers.map(layer => (
+                            <FrameworkLayer key={layer.id} title={layer.title} enTitle={layer.enTitle} activities={layer.activities} />
+                        ))
+                    }
+                </div>
             </div>
-        </div>
         </div>
     );
 }

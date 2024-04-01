@@ -12,12 +12,12 @@ const Pillars = () => {
             
             <h1 className="pillars-title">Our Pillars</h1>
             {/* <h2 className="pillars-subtitle">A Pioneer of This Dream</h2> */}
-            <div className="pillars-content">
+                <div className="pillars-content">
                     <Person name="Shrimati Anu Jain" position="Ideator, Adviser and Socialist" imageUrl="https://t3.ftcdn.net/jpg/02/43/12/34/360_F_243123463_zTooub557xEWABDLk0jJklDyLSGl2jrr.jpg" />
-                    <Person name="Ms. Prachi Jain" position="Founder,Director of Quality Assurance" imageUrl="https://images.inc.com/uploaded_files/image/1920x1080/getty_481292845_77896.jpg" />
+                    <Person name="Ms. Prachi Jain" position="Founder, Quality Assurance Director" imageUrl="https://images.inc.com/uploaded_files/image/1920x1080/getty_481292845_77896.jpg" />
                     <Person name="Er. Abhishikha Jain" position="Academic Operation Director" imageUrl="https://www.georgetown.edu/wp-content/uploads/2022/02/Jkramerheadshot-scaled-e1645036825432-1050x1050-c-default.jpg" />
                     <Person name="Mr. Rishabh Jain" position="Finance Director" imageUrl="https://t4.ftcdn.net/jpg/03/83/25/83/360_F_383258331_D8imaEMl8Q3lf7EKU2Pi78Cn0R7KkW9o.jpg" />
-            </div>
+                </div>
             </div>
         </div>
     );

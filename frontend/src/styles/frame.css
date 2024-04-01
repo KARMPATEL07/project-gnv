@@ -9,6 +9,7 @@
     /* Adjust as needed */
     width: 100%;
     /* Adjust as needed */
+    margin-top: 20px;
 }
 
 .frame-cards {
@@ -38,6 +39,7 @@
     font-size: 20px;
     margin-bottom: 20px;
     text-align: center;
+    padding: 15px;
 
     background-color: rgba(255, 242, 241, 0.6);
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -117,6 +119,10 @@
     background-color: #ddd;
 }
 
+.mobileView{
+    display: none;
+}
+
 /* Animation to slide the card up */
 @keyframes slideUp {
     from {
@@ -135,5 +141,19 @@
     justify-content: space-between;
         margin: 0 auto;
         max-width: 100%;
+    }
+
+    .mobileView{
+        display: block;        
+    }
+
+    .frame-cards{
+        display: none;
+
+    }
+
+    .frame-subtitle {
+        text-align:justify;
+        padding: 20px;
     }
 }
