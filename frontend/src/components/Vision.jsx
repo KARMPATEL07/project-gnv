@@ -1,5 +1,4 @@
 import React from "react";
-// import Swimmer from "../Assets/whyus.png";
 import SolutionStep from "./SolutionStep";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHouseFloodWater, faGlassWaterDroplet, faWater, faBullseye, faTelevision, faEyeLowVision } from "@fortawesome/free-solid-svg-icons";
