@@ -8,10 +8,10 @@ import Footer from './components/Footer';
 import Form from "./components/Form"
 
 import ReactGA from 'react-ga4'
-
+ReactGA.initialize("G-RMFS0M771F");
 function App() {
 
-  ReactGA.initialize("G-RMFS0M771F");
+  
   useEffect(()=>{
     ReactGA.send({
       hitType: "pageview",
